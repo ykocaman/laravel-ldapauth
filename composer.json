@@ -1,10 +1,12 @@
 {
-  "name": "Ykocaman/LdapAuth",
+  "name": "ykocaman/ldap-auth",
   "type": "library",
   "description": "Basic ldap authentication for laravel",
   "keywords": [
-    "Ykocaman",
-    "LdapAuth"
+    "laravel",
+    "ldap",
+    "authentication",
+    "ldapauth"
   ],
   "homepage": "https://github.com/Ykocaman/LdapAuth",
   "license": "MIT",
