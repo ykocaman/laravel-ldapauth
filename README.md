@@ -12,7 +12,7 @@ This is LDAP authentication package for **Laravel 5.5**
 1- Via Composer
 
 ``` bash
-$ composer require ykocaman/laravel-ldapauth
+$ composer require "ykocaman/laravel-ldapauth:0.*"
 ```
 
 2- After installing, copy config and migration file to root.
