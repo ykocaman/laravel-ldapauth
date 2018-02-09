@@ -1,5 +1,5 @@
 {
-  "name": "ykocaman/ldap-auth",
+  "name": "ykocaman/laravel-ldapauth",
   "type": "library",
   "description": "Basic ldap authentication for laravel",
   "keywords": [
