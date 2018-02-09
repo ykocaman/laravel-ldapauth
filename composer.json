@@ -1,0 +1,55 @@
+{
+  "name": "Ykocaman/LdapAuth",
+  "type": "library",
+  "description": "Basic ldap authentication for laravel",
+  "keywords": [
+    "Ykocaman",
+    "LdapAuth"
+  ],
+  "homepage": "https://github.com/Ykocaman/LdapAuth",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yusuf Kocaman",
+      "email": "yusuf.kocaman@msn.com",
+      "homepage": "https://github.com/ykocaman",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "illuminate/support": "~5.1",
+    "php": "~5.6|~7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": ">=5.4.3",
+    "squizlabs/php_codesniffer": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ykocaman\\LdapAuth\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ykocaman\\LdapAuth\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+    "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Ykocaman\\LdapAuth\\LdapAuthServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
