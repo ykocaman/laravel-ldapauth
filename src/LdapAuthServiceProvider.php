@@ -36,8 +36,8 @@ class LdapAuthServiceProvider extends ServiceProvider
             return new Manager($app);
         });
 
-        Auth::provider('ldap', function ($app) {
-            return new LdapAuthUserProvider(app(Hasher::class), User::class, app('ldapauth.connection'));
+        Auth::provider('ldap', function ($app, $config) {
+            return new LdapAuthUserProvider($this->app['hash'], $config['model'], app('ldapauth.connection'));
         });
     }
 }
